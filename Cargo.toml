@@ -1,0 +1,16 @@
+[package]
+name = "api-1"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.6.18"
+axum-client-ip = "0.4.1"
+daemonize = "0.5.0"
+ip2location = "0.4.2"
+postgres = { version = "0.19.5", features = ["with-serde_json-1"] }
+serde = "1.0.163"
+serde_json = "1.0.96"
+tokio = { version = "1.28.1", features = ["rt-multi-thread", "macros"] }
